@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário</title>
+</head>
+<body>
+  <div class="page">
+    <nav>
+
+      <span>MENTORIA</span>
+
+      <p>Preencha o formulário abaixo para<br/> agendar a sua mentoria</p>
+
+    </nav>
+
+    <form id="my-form">
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>INFORMAÇÕES PESSOAIS</legend>
+
+            <div class="col-2">
+              <div class="input-wrapper">
+                <label for="info-name">Nome</label>
+                <input type="text" name="info-name" id="info-name">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="info-sobrenome">Sobrenome</label>
+                <input type="text" name="info-sobrenome" id="info-sobrenome">
+              </div>
+
+            </div>
+
+            <div class="input-wrapper">
+              <label for="info-email">E-mail <span>(digite um email válido)</span></label>
+              <input type="email" name="info-email" id="info-email" required="true">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="info-password">Senha <span>(mínimo 6 caracteres)</span></label>
+              <input type="password" name="info-password" id="info-password" minlength="6">
+            </div>
+        
+        </div>
+        
+
+        
+
+      </fieldset>
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>INFORMAÇÕES DO MENTOR</legend>
+
+            <div class="input-wrapper">
+              <label for="info-nome-mentor">Nome do seu mentor<span>(só o primeiro nome)</span></label>
+              <input type="text" name="info-nome-mentor" id="info-nome-mentor">
+            </div>
+        
+        </div>
+        
+
+        
+
+      </fieldset>
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>SEUS HORÁRIOS DISPONÍVEIS</legend>
+
+            <div class="fieldset-legend-wrapper">
+              <legend class="sublegenda">PRIMEIRA MENTORIA</legend>
+
+              <div class="col-3">
+                <div class="input-wrapper">
+                  <label for="data-primeira-mentoria">Data</label>
+                  <input type="date" name="data-primeira-mentoria" id="data-primeira-mentoria">
+                </div>
+
+                <div class="COL-2-TIME">
+                  <div class="input-wrapper">
+                    <label for="inicio-primeira-mentoria">Das</label>
+                    <input type="time" name="inicio-primeira-mentoria" id="inicio-primeira-mentoria">
+                  </div>
+
+                  <div class="input-wrapper">
+                    <label for="fim-primeira-mentoria">Até</label>
+                    <input type="time" name="fim-primeira-mentoria" id="fim-primeira-mentoria">
+                  </div>
+                </div>
+  
+              </div>
+
+            </div>
+
+            <div class="fieldset-legend-wrapper">
+              <legend class="sublegenda">SEGUNDA MENTORIA</legend>
+
+              <div class="col-3">
+                <div class="input-wrapper">
+                  <label for="data-segunda-mentoria">Data</label>
+                  <input type="date" name="data-segunda-mentoria" id="data-segunda-mentoria">
+                </div>
+
+                <div class="COL-2-TIME">
+                  <div class="input-wrapper">
+                    <label for="inicio-segunda-mentoria">Das</label>
+                    <input type="time" name="inicio-segunda-mentoria" id="inicio-segunda-mentoria">
+                  </div>
+
+                  <div class="input-wrapper">
+                    <label for="fim-primeira-mentoria">Até</label>
+                    <input type="time" name="fim-segunda-mentoria" id="fim-segunda-mentoria">
+                  </div>
+                </div>
+  
+              </div>
+
+            </div>
+        
+        </div>
+
+        
+        
+
+        
+
+      </fieldset>
+
+    </form>
+
+    <div class="button-submit">
+      <input type="submit" value="Salvar" form="my-form" id="submit"/> 
+
+    </div>
+
+  </div>
+  
+  
+</body>
+</html>
